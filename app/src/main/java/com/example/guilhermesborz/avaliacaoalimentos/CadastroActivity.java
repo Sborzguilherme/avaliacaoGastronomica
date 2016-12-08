@@ -63,13 +63,12 @@ public class CadastroActivity extends AppCompatActivity {
 
         int rbSelecinado = rgCategoria.getCheckedRadioButtonId();
 
-        if (rbSelecinado == -1) {       // VALIDAÇÃO RADIO GROUP
-            Toast.makeText(CadastroActivity.this.getApplicationContext(), R.string.Selecione_uma_opcao, Toast.LENGTH_SHORT).show();
-        } else if(edDescricao.getText().toString().isEmpty()){      // VALIDAÇÃO DESCRIÇÃO
+         if(edDescricao.getText().toString().isEmpty()){      // VALIDAÇÃO DESCRIÇÃO
             Toast.makeText(CadastroActivity.this.getApplicationContext(), R.string.Escreva_algo_na_descricao, Toast.LENGTH_SHORT).show();
-        }
+        }else if (rbSelecinado == -1) {       // VALIDAÇÃO RADIO GROUP
+             Toast.makeText(CadastroActivity.this.getApplicationContext(), R.string.Selecione_uma_opcao, Toast.LENGTH_SHORT).show();
+         }
         else{
-
 
             Gastronomia comida = new Gastronomia();
 
