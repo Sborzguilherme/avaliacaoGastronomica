@@ -14,8 +14,8 @@ public class Gastronomia implements Parcelable {
     private String descricao;
     private String categoria;
     private Bitmap imagemCapturada;
-    private double latitude;
-    private double longitude;
+    //private double latitude;
+    //private double longitude;
 
     public Gastronomia(){
 
@@ -85,7 +85,7 @@ public class Gastronomia implements Parcelable {
         this.imagemCapturada = imagemCapturada;
     }
 
-    public double getLatitude() {
+    /*public double getLatitude() {
         return latitude;
     }
 
@@ -99,5 +99,5 @@ public class Gastronomia implements Parcelable {
 
     public void setLongitude(double longitude) {
         this.longitude = longitude;
-    }
+    }*/
 }

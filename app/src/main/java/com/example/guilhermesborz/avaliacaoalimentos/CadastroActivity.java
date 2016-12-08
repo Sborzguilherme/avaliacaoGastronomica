@@ -34,8 +34,8 @@ public class CadastroActivity extends AppCompatActivity {
     private RatingBar ratingNota;
     private ImageView ivFoto;
     private Bitmap recebeImagem;
-    //private double latitude;
-    //private double longitude;
+    private double latitude;
+    private double longitude;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,7 +70,6 @@ public class CadastroActivity extends AppCompatActivity {
         }
         else{
 
-            //salvarLocal(view);        //OBTEM LOCALIZAÇÃO
 
             Gastronomia comida = new Gastronomia();
 
