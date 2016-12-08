@@ -10,31 +10,31 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="tipo de comida"
+        android:text=""
         android:id="@+id/tvTipoComida"
         style="@style/FonteLista"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Aqui vai a descricao"
+        android:text=""
         android:layout_below="@id/tvTipoComida"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="@dimen/margem_tv_lista"
         android:id="@+id/tvDescricaoItemLista"
         style="@style/FonteLista"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Resultado da Avaliação"
+        android:text=""
         android:layout_below="@id/tvDescricaoItemLista"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="@dimen/margem_tv_lista"
         android:id="@+id/tvNotaRatingBar"
         style="@style/FonteLista"/>
 
     <ImageView
-        android:layout_height="110dp"
+        android:layout_height="@dimen/largura_imagem_lista"
         android:id="@+id/ivFotoComida"
         android:layout_alignParentEnd="true"
         android:src="@drawable/macarrao"
-        android:layout_width="105dp" />
+        android:layout_width="@dimen/altura_imagem_lista" />
 
 </RelativeLayout>

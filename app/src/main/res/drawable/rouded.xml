@@ -10,8 +10,8 @@
 
     // Arredondamento das bordas
     <corners
-        android:bottomRightRadius="5dp"
-        android:bottomLeftRadius="5dp"
-        android:topLeftRadius="5dp"
-        android:topRightRadius="5dp"/>
+        android:bottomRightRadius="@dimen/borda_itens_lista"
+        android:bottomLeftRadius="@dimen/borda_itens_lista"
+        android:topLeftRadius="@dimen/borda_itens_lista"
+        android:topRightRadius="@dimen/borda_itens_lista"/>
 </shape>

@@ -2,4 +2,14 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="borda_itens_lista">5dp</dimen>
+    <dimen name="margem_ratingbar">12dp</dimen>
+    <dimen name="margem_botao">8dp</dimen>
+    <dimen name="altura_imagem_cadastro">175dp</dimen>
+    <dimen name="margem_imagem">15dp</dimen>
+    <dimen name="margem_rv_botao">45dp</dimen>
+    <dimen name="largura_imagem_cadastro">95dp</dimen>
+    <dimen name="altura_imagem_lista">105dp</dimen>
+    <dimen name="largura_imagem_lista">110dp</dimen>
+    <dimen name="margem_tv_lista">10dp</dimen>
 </resources>

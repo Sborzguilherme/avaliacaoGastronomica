@@ -34,8 +34,8 @@ public class CadastroActivity extends AppCompatActivity {
     private RatingBar ratingNota;
     private ImageView ivFoto;
     private Bitmap recebeImagem;
-    private double latitude;
-    private double longitude;
+    //private double latitude;
+    //private double longitude;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,9 +64,9 @@ public class CadastroActivity extends AppCompatActivity {
         int rbSelecinado = rgCategoria.getCheckedRadioButtonId();
 
         if (rbSelecinado == -1) {       // VALIDAÇÃO RADIO GROUP
-            Toast.makeText(CadastroActivity.this.getApplicationContext(), "Selecione uma opção", Toast.LENGTH_SHORT).show();
+            Toast.makeText(CadastroActivity.this.getApplicationContext(), R.string.Selecione_uma_opcao, Toast.LENGTH_SHORT).show();
         } else if(edDescricao.getText().toString().isEmpty()){      // VALIDAÇÃO DESCRIÇÃO
-            Toast.makeText(CadastroActivity.this.getApplicationContext(), "Escreva algo na descricao", Toast.LENGTH_SHORT).show();
+            Toast.makeText(CadastroActivity.this.getApplicationContext(), R.string.Escreva_algo_na_descricao, Toast.LENGTH_SHORT).show();
         }
         else{
 
@@ -79,13 +79,13 @@ public class CadastroActivity extends AppCompatActivity {
 
             RadioButton opcaoSelecionada = (RadioButton)findViewById(rbSelecinado);
 
-            if(opcaoSelecionada.getText().toString().equals("Entrada")){
+            if(opcaoSelecionada.getText().toString().equals(getString(R.string.Entrada))){
                 comida.setCategoria("Entrada");
-            }else if(opcaoSelecionada.getText().toString().equals("Prato Principal")){
+            }else if(opcaoSelecionada.getText().toString().equals(getString(R.string.Prato_principal))){
                 comida.setCategoria("Prato Principal");
-            }else if(opcaoSelecionada.getText().toString().equals("Sobremesa")){
+            }else if(opcaoSelecionada.getText().toString().equals(getString(R.string.Sobremesa))){
                 comida.setCategoria("Sobremesa");
-            }else if(opcaoSelecionada.getText().toString().equals("Lanche")){
+            }else if(opcaoSelecionada.getText().toString().equals(getString(R.string.Lanche))){
                 comida.setCategoria("Lanche");
             }
 
@@ -110,7 +110,7 @@ public class CadastroActivity extends AppCompatActivity {
 
     }
 
-   /* public void salvarLocal(View v) {
+    /*public void salvarLocal(View v) {
 
         if (ContextCompat.checkSelfPermission(this.getApplicationContext(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             //nao tem permissão, então solicita
@@ -118,14 +118,14 @@ public class CadastroActivity extends AppCompatActivity {
             ActivityCompat.requestPermissions(this, permissoes, 1);
             return;
         }
-        //se chegou aqui é pq tem permissão
+        //se chegou aqui é porque há permissão
         obterCoordenada();
 
     }*/
 
     /*@Override
     public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
-        //se chegou aqui é pq a permissão foi solicitada, é hora de avaliar se foi concedida ou não
+        //se chegou aqui é porque a permissão foi solicitada, é hora de avaliar se foi concedida ou não
         for (int i = 0; i < permissions.length; i++) {
             if (permissions[i] == Manifest.permission.ACCESS_FINE_LOCATION && grantResults[i] == PackageManager.PERMISSION_GRANTED) {
                 //permissão concedida
@@ -152,6 +152,9 @@ public class CadastroActivity extends AppCompatActivity {
                     .setPositiveButton("Ligar", new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int id) {
                             startActivity(new Intent(android.provider.Settings.ACTION_LOCATION_SOURCE_SETTINGS));
+                            location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+                            latitude = location.getLatitude();
+                            longitude = location.getLongitude();
                         }
                     })
                     .setNegativeButton("Não Ligar", new DialogInterface.OnClickListener() {
@@ -163,8 +166,7 @@ public class CadastroActivity extends AppCompatActivity {
             AlertDialog alert = builder.create();
             alert.show();
 
-            latitude = location.getLatitude();
-            longitude = location.getLongitude();
+
         }
     }*/
 }

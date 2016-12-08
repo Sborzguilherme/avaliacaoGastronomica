@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">avaliacaoAlimentos</string>
+    <string name="descricao">Descricao</string>
+    <string name="prato_principal">Prato Principal</string>
+    <string name="sobremesa">Sobremesa</string>
+    <string name="lanche">Lanche</string>
+    <string name="foto">Foto</string>
+    <string name="salvar">Salvar</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="Selecione_uma_opcao">Selecione uma opção</string>
+    <string name="Escreva_algo_na_descricao">Escreva algo na descricao</string>
+    <string name="Entrada">Entrada</string>
+    <string name="Prato_principal">Prato Principal</string>
+    <string name="Sobremesa">Sobremesa</string>
+    <string name="Lanche">Lanche</string>
+    <string name="Sem_cadastro_de_Avaliacoes">NÂO HÁ AVALIAÇÕES CADASTRADAS</string>
 </resources>

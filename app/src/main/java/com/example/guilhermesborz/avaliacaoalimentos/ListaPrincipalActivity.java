@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.LocationListener;
 import android.location.LocationManager;
+import android.net.Uri;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
@@ -39,7 +40,7 @@ public class ListaPrincipalActivity extends AppCompatActivity {
         ArrayList<Gastronomia> lista = GastronomiaDAO.obterLista();
 
         if (lista.size() < 1) {
-            tvAviso.setText("NÂO HÁ AVALIAÇÕES CADASTRADAS");
+            tvAviso.setText(R.string.Sem_cadastro_de_Avaliacoes);
         }
 
         RecyclerView rvListaGastronomia = (RecyclerView) findViewById(R.id.rvListaGastronomia);

@@ -13,7 +13,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Descricao"
+        android:text="@string/descricao"
         android:id="@+id/tvDescricao"
         style="@style/Cadastro"/>
 
@@ -34,7 +34,7 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Prato Principal"
+            android:text="@string/prato_principal"
             style="@style/Cadastro"
             android:buttonTint="#FF4500"
             />
@@ -50,14 +50,14 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sobremesa"
+            android:text="@string/sobremesa"
             style="@style/Cadastro"
             android:buttonTint="#FF4500"
             />
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Lanche"
+            android:text="@string/lanche"
             style="@style/Cadastro"
             android:buttonTint="#FF4500"
             />
@@ -66,32 +66,32 @@
     <RatingBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="@dimen/margem_ratingbar"
         android:layout_below="@+id/rgCategorias"
         android:layout_alignParentStart="true"
         android:id="@+id/ratingNota"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Foto"
+        android:text="@string/foto"
         android:layout_below="@id/ratingNota"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="@dimen/margem_botao"
         android:id="@+id/btFoto"
         android:onClick="clicouNoBotaoTirarFoto"
         style="@style/Botao"/>
 
     <ImageView
-        android:layout_width="175dp"
-        android:layout_height="95dp"
+        android:layout_width="@dimen/altura_imagem_cadastro"
+        android:layout_height="@dimen/largura_imagem_cadastro"
         android:id="@+id/ivFoto"
         android:layout_below="@+id/btFoto"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"/>
+        android:layout_marginTop="@dimen/margem_imagem"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Salvar"
+        android:text="@string/salvar"
         android:layout_alignParentBottom="true"
         android:onClick="cliqueBotao2"
         style="@style/Botao"/>
